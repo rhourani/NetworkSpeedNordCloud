@@ -25,7 +25,7 @@ let speed = 0;
 let distancBetweenDeviceAndStation = 0;
 
 for (let i = 0; i < devices.length ; i++){
-    printBestStation.speed = ZERO_SPEED;
+    printBestStation.speed = ZERO_SPEED; //initialize it every time we loop for a new device
     for(let j = 0; j < stations.length ; j++)
     {
         distancBetweenDeviceAndStation = Math.sqrt(Math.pow((stations[j].x - devices[i].x) , 2)
@@ -48,7 +48,7 @@ for (let i = 0; i < devices.length ; i++){
         }
     }
 
-    if(printBestStation.speed == ZERO_SPEED){
+    if(printBestStation.speed == ZERO_SPEED){ //If it remained zero after exiting the loop, then we know that there is no station in reach
         printError(devices[i].x, devices[i].y);
     }
     else{
