@@ -13,3 +13,5 @@
 * Navigate to 'Run' in the main menu,
 * Click Run and choose Node.js as the launcher
 
+ # Results
+![This is an image](https://github.com/rhourani/NetworkSpeedNordCloud/blob/main/network%20speed%20results.png)
